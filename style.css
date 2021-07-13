@@ -1,0 +1,92 @@
+:root {
+    --title: #333;
+    --background: #f4e1d2;
+    --button-border: #50394c;
+    --button: #ffef96;
+    --buttonHover:#50394c;
+    --border: rgb(17, 17, 17);
+    --header: rgba(80, 57, 76, 1);
+    --backgroundSecundary:rgba(244, 225, 210, 0.1);
+  }
+  
+
+html{
+    font-size: 20px;
+    font-family: "roboto", monospace;
+}
+
+body{
+    background-color: var(--background);
+}
+a{
+    text-decoration: none;
+    color: rgba(0, 0,0, 0.8);
+}
+
+.gridConteiner{
+    display : grid;
+    justify-content: center;
+    max-width: 600px;
+    min-height: 600px;
+    margin: 10px auto;
+    border: 2px solid var(--border);
+    
+}
+
+
+
+.grid-item{
+    border: 1px solid var(--border);
+    background-color: whitesmoke; 
+}
+
+
+.header{
+
+    display: flex;
+    background-color: var(--header);
+    color: rgba(0, 0,0, 0.8)
+}
+
+
+button{
+    padding: 15px 32px;
+    text-decoration: none;
+    background-color: var(--button); 
+    color: rgba(0, 0,0, 0.8);
+    border: solid var(--button-border);
+    font-size: 16px;
+    margin: 10px;
+}
+
+button:hover{
+    background-color: var(--buttonHover);
+    scale: 1.1;
+}
+
+
+
+.buttonChangeBehaviour{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    flex-wrap: wrap;
+    
+}
+
+.buttonGridSize{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+.footer{
+   
+    background-color: var(--backgroundSecundary);
+    display: flex;
+    justify-content: flex-end;
+}
+
+#valueNewGrid{
+    width: 450px;
+}

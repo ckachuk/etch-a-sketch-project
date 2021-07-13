@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Etch-a-sketch</title>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="header">
+            <h1>The Etch-a-sketch-project</h1>
+        </div>
+
+        <div class="buttonGridSize">
+            <input type="range" id='valueNewGrid' max="64" min="1" onchange="updateTextInput(this.value);">
+            <h2 id="textInput">16</h2>
+            <button class="changeGridButton">Change grid size</button>
+        </div>
+
+        <div class="buttonChangeBehaviour">
+            <button class="changeButton" id="rainbowMode">Rainbow mode</button>
+            <button class="changeButton" id="blackMode">Black mode</button>
+            <button class="changeButton" id="whiteMode">White mode</button>
+            <button class="clearButton" id="clearMode">Clear</button>
+        </div>
+       
+        <div class="grid">
+            <div class="gridConteiner">
+           
+            </div>
+        </div>
+        
+
+        <div class="footer">
+            <h3><a href="https://github.com/ckachuk">development by carlk</a></h3>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
